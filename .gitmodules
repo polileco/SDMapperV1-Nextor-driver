@@ -1,0 +1,3 @@
+[submodule "external/nextor"]
+	path = external/nextor
+	url = https://github.com/Konamiman/Nextor.git
