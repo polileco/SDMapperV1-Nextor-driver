@@ -63,7 +63,7 @@ else
 _VARIANT :=
 endif
 
-ROM := $(BIN)/Nextor-$(NEXTOR_KERNEL_VERSION).SDMapper$(_VARIANT).ROM
+ROM := $(BIN)/Nextor-$(NEXTOR_KERNEL_VERSION).SDMapper.V1$(_VARIANT).ROM
 
 ### Build flag inference #####################################################
 

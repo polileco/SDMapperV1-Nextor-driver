@@ -53,7 +53,7 @@ jobs:
           n=0
           for base in "" .NO_UNDOC; do
             f="$(ls bin/Nextor-*.SDMapper.V1${base}.ROM 2>/dev/null || true)"
-            [ -n "$f" ] && [ -s "$f" ] || { echo "Missing or empty: bin/Nextor-*.SunriseIDE${rom}${base}.ROM"; exit 1; }
+            [ -n "$f" ] && [ -s "$f" ] || { echo "Missing or empty: bin/Nextor-*.SDMapper.V1${base}.ROM"; exit 1; }
             n=$((n + 1))
           done
           total=$(ls bin/*.ROM | wc -l)
