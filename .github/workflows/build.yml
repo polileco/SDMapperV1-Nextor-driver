@@ -63,5 +63,5 @@ jobs:
       - name: Upload ROMs
         uses: actions/upload-artifact@v4
         with:
-          name: sunrise-ide-roms
+          name: sdmapper-v1-roms
           path: bin/Nextor-*.SDMapper*.ROM
