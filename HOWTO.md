@@ -15,7 +15,7 @@ Este guia descreve o processo de atualização do firmware/driver da interface *
 
 1. Copie o programa atualizador (`SDMUPD.COM`) e o arquivo da nova ROM (com o kernel do Nextor 3.0 + driver da SDMapper) para o seu dispositivo de armazenamento secundário. Os arquivos estão disponíveis na página de [**Releases**](https://github.com/polileco/SDMapperV1-Nextor-driver/releases).
 2. Insira a SDMapper e o dispositivo secundário no MSX e ligue o computador.
-   > *Dica:* Se o MSX tentar dar boot pela SDMapper antes do dispositivo secundário, segure a tecla **Q/W/E/R** para os slots 1(-0) até 1-3, respectivamente, **A/S/D/F** para os slots 2(-0) até 2-3, respectivamente ou **Z/X/C/V** para os slots 3(-0) até 3-3, respectivamente (dependendo da sua configuração atual - vide [manual do usuário(https://github.com/Konamiman/Nextor/blob/v2.1.4/docs/Nextor%202.1%20User%20Manual.md#29-boot-keys) durante o boot logo depois do logo do MSX ou deixe a SDMapper sem cartão durante o boot.
+   > *Dica:* Se o MSX tentar dar boot pela SDMapper antes do dispositivo secundário, segure a tecla **Q/W/E/R** para os slots 1(-0) até 1-3, respectivamente, **A/S/D/F** para os slots 2(-0) até 2-3, respectivamente ou **Z/X/C/V** para os slots 3(-0) até 3-3, respectivamente (dependendo da sua configuração atual - vide [manual do usuário do Nextor 2](https://github.com/Konamiman/Nextor/blob/v2.1.4/docs/Nextor%202.1%20User%20Manual.md#29-boot-keys) durante o boot logo depois do logo do MSX ou deixe a SDMapper sem cartão durante o boot.
 3. No prompt do MSX-DOS do dispositivo secundário, acesse a pasta onde estão os arquivos e execute o atualizador:
    ```text
    SDMUPD <nome_do_arquivo.rom>
