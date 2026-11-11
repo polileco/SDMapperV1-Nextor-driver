@@ -15,7 +15,7 @@ Este guia descreve o processo de atualização do firmware/driver da interface *
 
 1. Copie o programa atualizador (`SDMUPD.COM`) e o arquivo da nova ROM (com o kernel do Nextor 3.0 + driver da SDMapper) para o seu dispositivo de armazenamento secundário. Os arquivos estão disponíveis na página de [**Releases**](https://github.com/polileco/SDMapperV1-Nextor-driver/releases).
 2. Insira a SDMapper e o dispositivo secundário no MSX e ligue o computador.
-   > *Dica:* Se o MSX tentar dar boot pela SDMapper antes do dispositivo secundário, segure a tecla **Q/W/E/R** para os slots 1(-0) até 1-3, respectivamente, **A/S/D/F** para os slots 2(-0) até 2-3, respectivamente ou **Z/X/C/V** para os slots 3(-0) até 3-3, respectivamente (dependendo da sua configuração atual - vide [manual do usuário do Nextor 2](https://github.com/Konamiman/Nextor/blob/v2.1.4/docs/Nextor%202.1%20User%20Manual.md#29-boot-keys) durante o boot logo depois do logo do MSX ou deixe a SDMapper sem cartão durante o boot.
+   > *Dica:* Se o MSX tentar dar boot pela SDMapper antes do dispositivo secundário, segure a tecla **Q/W/E/R** para os slots 1(-0) até 1-3, respectivamente, **A/S/D/F** para os slots 2(-0) até 2-3, respectivamente ou **Z/X/C/V** para os slots 3(-0) até 3-3, respectivamente (dependendo da sua configuração atual - vide [manual do usuário do Nextor 2](https://github.com/Konamiman/Nextor/blob/v2.1.4/docs/Nextor%202.1%20User%20Manual.md#29-boot-keys)) durante o boot logo depois do logo do MSX **ou** deixe a SDMapper sem cartão durante o boot.
 3. No prompt do MSX-DOS do dispositivo secundário, acesse a pasta onde estão os arquivos e execute o atualizador:
    ```text
    SDMUPD <nome_do_arquivo.rom>
@@ -30,12 +30,15 @@ Este guia descreve o processo de atualização do firmware/driver da interface *
 Agora é preciso preparar o cartão SD com os arquivos de sistema e utilitários do Nextor 3.0. Se você usa este mesmo cartão em outras interfaces que ainda rodam o Nextor 2, você pode configurar um esquema de **dual-boot**:
 
 1. Baixe o pacote com os novos programas e utilitários do Nextor 3.0 (seção *Tools disk image and ZIP file for Nextor 3.0*):
-   * 🔗 [Releases do Nextor no GitHub (Konamiman)](https://github.com/Konamiman/Nextor/releases#release-tools-disk-image-and-zip-for-Nextor-3.0)
+   * 🔗 [Releases do Nextor no GitHub](https://github.com/Konamiman/Nextor/releases#release-tools-disk-image-and-zip-for-Nextor-3.0)
 2. Descompacte o arquivo `.zip` no seu computador.
 3. No cartão SD, crie uma **nova pasta** (por exemplo, `NEXTOR3` ou `UTILS3`) e copie para dentro dela o conteúdo da pasta `TOOLS` do pacote baixado. Isso evita sobrescrever os comandos antigos do Nextor 2. Voce pode _mesclar/sobreescrever_ os arquivos da pasta `HELP`, caso exista, na **raiz** do cartão SD.
 4. Na **raiz** do cartão SD, copie os arquivos `NEXTOR.SYS` e `COMMAND3.COM`.
-   * **Atenção para o Dual-Boot:** O kernel do Nextor 3 procura primeiro pelo arquivo `NEXTOR3.SYS` antes de carregar o `NEXTOR.SYS`. Portanto, se você quiser manter o `NEXTOR.SYS` original (versão 2) funcionando em outros cartuchos, **renomeie o novo arquivo para `NEXTOR3.SYS`** antes de copiá-lo para a **raiz** do cartão.
-   * *(Opcional)* Se você deseja utilizar o arquivo de inicialização automática o Nextor 3 agora utiliza o nome `AUTOEXEC.BTM` (deixando o `AUTOEXEC.BAT` livre para o Nextor 2 / MSX-DOS).
+   * **Atenção para o Dual-Boot:** O kernel do Nextor 3 procura primeiro pelo arquivo `NEXTOR3.SYS` antes de carregar o `NEXTOR.SYS`. Portanto, se você quiser manter o `NEXTOR.SYS` original (versão 2) funcionando em outros cartuchos, **renomeie o novo arquivo para `NEXTOR3.SYS`** antes de copiá-lo para a raiz do cartão.
+   * *(Opcional)* O Nextor 3 agora utiliza o arquivo `AUTOEXEC.BTM` para a inicialização automática do sistema (deixando o `AUTOEXEC.BAT` livre para o Nextor 2 / MSX-DOS). Você pode criar um específico para a nova versão ou copiar o `AUTOEXEC.BAT` para `AUTOEXEC.BTM`
+   ```text
+   A:\>COPY AUTOEXEC.BAT AUTOEXEC.BTM
+   ```
 
 ---
 
