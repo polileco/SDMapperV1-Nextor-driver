@@ -2383,7 +2383,7 @@ strCopyright:
 	db	"(c) 2026 Leandro Polimeno",13,10
 	db	"Licensed under CERN OHL v1.1",13,10
 	db	"http://ohwr.org/cernohl",13,10
-	db	"PCB designed by Luciano Sturaro",13,10
+	db	"PCB designed by Luciano Sturaro"
 	; fall throw
 strCrLf:
 	db	13,10,0
