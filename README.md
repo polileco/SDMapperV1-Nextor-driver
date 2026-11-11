@@ -9,10 +9,10 @@ The driver is a migration of the Nextor 2 driver of the SDMapper
 Guide*: the hardware access code is the original one, wrapped by the Nextor 3 query
 based interface.
 
-## How-to update the cartridge
+## A how-to guide to update the cartridge
 
-- [Portuguese (PT-BR)](HOWTO.md)
-- English
+- [Portuguese (PT-BR)](HOWTO_PT-BR.md)
+- [English](HOWTO_EN.md)
 
 ## Repository contents
 
