@@ -1,19 +1,18 @@
-# FBLabs SD Mapper v1 driver for Nextor 3
+# FBLabs SDMapper V1 driver for Nextor 3
 
-Nextor 3 driver for the FBLabs SD Mapper v1 (SD/SDHC card interface with mapper and
+Nextor 3 driver for the FBLabs SDMapper V1 (SD/SDHC cartridge interface with mapper and
 MegaRAM for MSX computers). It produces a Nextor ROM image that combines a Nextor kernel
 (v3.0 or newer) base file with this driver.
 
-The driver is a migration of the Nextor 2 driver of the SD Mapper
+The driver is a migration of the Nextor 2 driver of the SDMapper
 (https://github.com/fbelavenuto/msxsdmapper) following the *Nextor 3.0 Driver Migration
 Guide*: the hardware access code is the original one, wrapped by the Nextor 3 query
 based interface.
 
-## Devices
+## How-to update the cartridge
 
-Two devices, one per SD card slot (device 1 and device 2), both reported as removable.
-Cards of up to 8GB are supported (the block count is kept in 24 bits). The geometry
-(cylinders/heads/sectors per track) is reported as 0, since SD cards have none.
+- [Portuguese (PT-BR)](HOWTO.md)
+- English
 
 ## Repository contents
 
@@ -69,5 +68,5 @@ section 5.
 
 ## Credits
 
-Fabio Belavenuto (original SD Mapper driver), FRS, Leandro Polimeno; hardware by Luciano Sturaro.
+Fabio Belavenuto and FRS for original SDMapper driver and Leandro Polimeno; hardware by Luciano Sturaro.
 See the notices at the top of `driver.asm` for the license terms.
